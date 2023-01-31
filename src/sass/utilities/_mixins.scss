@@ -1,0 +1,11 @@
+@mixin screen-lg {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin screen-xl {
+    @media screen and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}

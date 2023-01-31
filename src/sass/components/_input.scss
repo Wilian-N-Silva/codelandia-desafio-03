@@ -1,0 +1,14 @@
+.input {
+    padding: 18px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font: $input-text;
+
+    @include screen-lg {
+        padding: 21px 15px;
+    }
+
+    &::placeholder {
+        color: rgba(110, 114, 117, .74);
+    }
+}

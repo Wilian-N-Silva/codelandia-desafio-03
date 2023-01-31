@@ -1,0 +1,8 @@
+.container {
+    margin: 0 auto;
+    max-width: $container-max-width;
+
+    @include screen-lg {
+        max-width: $container-max-width-lg;
+    }
+}

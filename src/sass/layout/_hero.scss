@@ -1,0 +1,45 @@
+.hero {
+    padding: 55px 0 88px;
+
+    @include screen-lg {
+        padding: 78px 0 120px;
+    }
+
+    background-color: $purple-light;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 126px;
+
+        @include screen-lg {
+            gap: 0px;
+            flex-direction: row;
+        }
+
+        &-content {
+            gap: 17.5px;
+
+            & h1 {
+                font: $heading-1;
+                max-width: 16ch;
+
+                @include screen-lg {
+                    font: $heading-1-lg;
+                }
+            }
+
+            & p {
+                max-width: 37ch;
+                font: $leading;
+                margin-bottom: calc(45px - 17.5px);
+            }
+
+            @include screen-lg {
+                max-width: 400px;
+            }
+        }
+    }
+}

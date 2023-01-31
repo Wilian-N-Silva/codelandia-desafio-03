@@ -1,0 +1,25 @@
+.cards {
+    padding: 75px 0;
+    background-color: $white-200;
+
+    @include screen-lg {
+        padding: 151px 0 149px;
+    }
+
+    &-container {
+        &-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            justify-content: center;
+
+            @include screen-lg {
+                row-gap: 68px;
+                justify-content: space-between;
+                grid-template-columns: repeat(auto-fit, 340px);
+            }
+
+        
+        }
+    }
+}

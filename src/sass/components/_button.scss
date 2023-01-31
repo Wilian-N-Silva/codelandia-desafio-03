@@ -1,0 +1,19 @@
+.button {
+    padding: 12px 50px;
+    background-color: $purple;
+    border-radius: 5px;
+    color: $white;
+    border: 1px solid transparent;
+    transition: .3s;
+    cursor: pointer;
+    font: $button;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+
+    &-block {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+.contact {
+    background-color: $purple-light;
+
+    &-container {
+        padding: 83px 0 56px;
+        width: 100%;
+
+        @include screen-lg {
+            padding: 86px 0 79px;
+            max-width: 470px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 36px;
+            font: $heading-2;
+
+            @include screen-lg {
+                margin-bottom: 60px;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include screen-lg {
+                gap: 15px;
+            }
+
+            textarea {
+                height: 150px;
+                resize: none;
+
+                @include screen-lg {
+                    height: 165px;
+                }
+            }
+
+            & button {
+                margin-top: 25px;
+
+                @include screen-lg {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
